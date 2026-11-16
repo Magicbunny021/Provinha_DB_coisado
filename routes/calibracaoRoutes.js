@@ -10,11 +10,11 @@ import {
 
 const router = Router();
 
-router.post("/", cadastrar);
-router.get("/", listar);
-router.get("/detalhadas", listarDetalhadas);
-router.get("/:id", buscarPorId);
-router.patch("/:id", atualizar);
-router.delete("/:id", excluir);
+router.post("/", cadastrarCalibracao);
+router.get("/", listarCalibracoes);
+router.get("/detalhadas", listarCalibracoesDetalhadas);
+router.get("/:id", buscarCalibracaoPorId);
+router.patch("/:id", atualizarCalibracao);
+router.delete("/:id", deletarCalibracao);
 
 export default router;
