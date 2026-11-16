@@ -1,11 +1,11 @@
 import { Router } from "express";
 import {
-  cadastrar,
-  listar,
-  listarDetalhadas,
-  buscarPorId,
-  atualizar,
-  excluir
+  cadastrarCalibracao,
+  listarCalibracoes,
+  listarCalibracoesDetalhadas,
+  buscarCalibracaoPorId,
+  atualizarCalibracao,
+  deletarCalibracao
 } from "../controller/calibracaoController.js";
 
 const router = Router();

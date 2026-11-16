@@ -10,6 +10,7 @@ export async function listar() {
 }
 
 //listagem detalhada usa JOIN e retorna a calibração com código e nome do equipamento relacionado.
+
 export async function listarDetalhadas() {
     const [linha] = await Pool.execute("SELECT calibracoes.equipamento_id equipamentos.nome FROM calibracoes")
 }

@@ -1,18 +1,18 @@
 import { Router } from "express";
 import {
-  cadastrar,
-  listar,
-  buscarPorId,
-  atualizar,
-  excluir
+  cadastrarEquipamento,
+  listarEquipamentos,
+  buscarEquipamentoPorId,
+  atualizarEquipamento,
+  deletarEquipamento
 } from "../controller/equipamentoController.js";
 
 const router = Router();
 
-router.post("/", cadastrar);
-router.get("/", listar);
-router.get("/:id", buscarPorId);
-router.patch("/:id", atualizar);
-router.delete("/:id", excluir);
+router.post("/", cadastrarEquipamento);
+router.get("/", listarEquipamentos);
+router.get("/:id", buscarEquipamentoPorId);
+router.patch("/:id", atualizarEquipamento);
+router.delete("/:id", deletarEquipamento);
 
 export default router;
